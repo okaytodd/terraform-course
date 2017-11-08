@@ -37,23 +37,51 @@ Complex changesets can be applied to your infrastructure with minimal human inte
 
 To get the most out of this course there are a few things you should be moderately familiar with. These include;
 
-* Computer Networking
-* Basic Linux or Unix CLI Commands
-* Basic Scripting and Language Constructs
+* Computer Networking - Basic understanding of what an IP number is, how they're assigned via DHCP vs. static, and related basic TCP/IP knowledge. Also it is helpful, yet not necessary to understand the idea behind CIDR ranges and related network concepts about addressing also.
+* Basic Linux or Unix CLI Commands - Commands like; `ls`, `mv`, `rm`, `cp`, `mkdir`, `rmdir`, `wget`, `curl`, `ping`, `traceroute`, `nslookup`, `vi`, `kill`, `chown`, `ifconfig`, `whoami`, `su`, `chmod`, `chown`, `chroot`, `cat`, `env`, `echo` or `tail`. All these commands are't used in the couse, but they're fundamental for building and troubleshooting any infrastructure and related environments and systems in the future.
+* Basic Scripting and Language Constructs - Things like if-then-else, while loops, and related programming constructs for use in scripting like Bash or Powershell.
 
 # Terraform vs. Comparable Tooling
 
 ... vs.
 
+* CloudFormation, Azure Resource Templates, Heat, etc. - https://www.terraform.io/intro/vs/cloudformation.html
+* Chef, Puppet, Etc - https://www.terraform.io/intro/vs/chef-puppet.html 
+* Other software.
+
 # Why Immutable Infrastructure?
 
-
+http://blog.armory.io/spinnaker-feature-immutable-infrastructure/
+https://blog.codeship.com/immutable-infrastructure/
+https://thenewstack.io/a-brief-look-at-immutable-infrastructure-and-why-it-is-such-a-quest/
 
 # Downloading & Installation
+
+https://www.terraform.io/downloads.html
+
+Installation and upgrade (possibly have old version, check it, then upgrade)
+
 # Getting Started Terraform Initialization
+
+https://www.terraform.io/docs/commands/init.html
+https://www.terraform.io/docs/backends/init.html
+
 # Terraform "Hello World"
+
+Let's create a resource with a statically assigned IP.
+
 # Building Your Ecosystem
+
+What can be built? Let's build a usable server and assign the IP to it.
+
 # Building a Network
+
+Introduce the notion of what a network is in the cloud.
+
+Discuss building and setting up the IP and instance we've previously created inside a new network. 
+
+Create new network. Put IP and Instance into the new network.
+
 # Network, Subnetworks
 # Deploy Servers
 # Virtual Machines
