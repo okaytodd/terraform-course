@@ -38,7 +38,7 @@ Complex changesets can be applied to your infrastructure with minimal human inte
 To get the most out of this course there are a few things you should be moderately familiar with. These include;
 
 * Computer Networking - Basic understanding of what an IP number is, how they're assigned via DHCP vs. static, and related basic TCP/IP knowledge. Also it is helpful, yet not necessary to understand the idea behind CIDR ranges and related network concepts about addressing also.
-* Basic Linux or Unix CLI Commands - Commands like; `ls`, `mv`, `rm`, `cp`, `mkdir`, `rmdir`, `wget`, `curl`, `ping`, `traceroute`, `nslookup`, `vi`, `kill`, `chown`, `ifconfig`, `whoami`, `su`, `chmod`, `chown`, `chroot`, `cat`, `env`, `echo` or `tail`. All these commands are't used in the couse, but they're fundamental for building and troubleshooting any infrastructure and related environments and systems in the future.
+* Basic Linux or Unix CLI Commands - Commands like; `ls`, `mv`, `rm`, `cp`, `mkdir`, `rmdir`, `wget`, `curl`, `ping`, `traceroute`, `ifconfig`, `nslookup`, `vi`, `kill`, `chown`, `whoami`, `su`, `chmod`, `chown`, `chroot`, `cat`, `env`, `echo` or `tail`. All these commands are't used in the couse, but they're fundamental for building and troubleshooting any infrastructure and related environments and systems in the future.
 * Basic Scripting and Language Constructs - Things like if-then-else, while loops, and related programming constructs for use in scripting like Bash or Powershell.
 
 # Terraform vs. Comparable Tooling
