@@ -1,0 +1,1 @@
+`ls`, `mv`, `rm`, `cp`, `mkdir`, `rmdir`

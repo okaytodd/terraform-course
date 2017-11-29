@@ -78,7 +78,49 @@ What can be built? Let's build a usable server and assign the IP to it.
 
 Introduce the notion of what a network is in the cloud.
 
+**Networking with AWS**
+
+https://aws.amazon.com/products/networking/ discuss each of the 4 products.
+http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Networking.html discuss the networking components
+Some additional questions and answers that might be useful > https://aws.amazon.com/answers/networking/
+
+* Network Interfaces
+* Route Tables
+* Internet Gateways
+* Egress-Only Internet Gateways
+* DHCP Options Sets
+* DNS
+* Elastic IP Addresses
+* VPC Endpoints
+* NAT
+* VPC Peering
+* ClassicLink
+
+AWS Networking ala Terraform
+https://www.terraform.io/docs/providers/aws/index.html
+
+**Networking with GCP**
+
+https://cloud.google.com/products/networking/ discuss each of the products.
+https://cloud.google.com/vpc/docs/vpc 
+https://cloud.google.com/vpc/docs/concepts
+https://cloud.google.com/compute/docs/networks-and-firewalls
+https://cloud.google.com/interconnect/
+
+GCP Networking ala Terraform
+https://www.terraform.io/docs/providers/google/index.html
+
+**Networking with Azure**
+
+https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview
+The Azure Networking Blog https://azure.microsoft.com/en-us/blog/topics/networking/
+
+Azure Network ala Terraform
+https://www.terraform.io/docs/providers/azurerm/index.html
+
 Discuss building and setting up the IP and instance we've previously created inside a new network. 
+
+
 
 Create new network. Put IP and Instance into the new network.
 
