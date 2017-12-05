@@ -1,0 +1,3 @@
+If you've not heard of Bitnami, the chances you will in the coming months is dramatically increasing! Bitnami has just released a Kubeapps in time for KubeCon. This is an open source Kubenetes application console. It provides a browse and click deployment of many ready-to-run applications and development environments.
+
+This Kubeapps Console builds on what Bitnami was already known for, which is ready to run, quality, baked, and maintained images and applications.
