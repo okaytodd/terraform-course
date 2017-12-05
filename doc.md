@@ -120,15 +120,34 @@ https://www.terraform.io/docs/providers/azurerm/index.html
 
 Discuss building and setting up the IP and instance we've previously created inside a new network. 
 
-
-
 Create new network. Put IP and Instance into the new network.
 
 # Network, Subnetworks
+
+Build out a network with respective subnetworks and discuss the reasoning and ideas behind subnetworks. Scaling devices into them, etc.
+
 # Deploy Servers
+
+Let's deploy some standard servers now. Once I get that deployed I'll show you how to go beyond that and start setting up services on the server, and even deploy a little application service code from the Terraform perspective.
+
 # Virtual Machines
+
+Now that we've setup a server, let's take a look at managing multiple servers deployed within the overall environment.
+
 # Clusters w/ Cloud Platforms
+
+Alright, now that we've gotten some virtual servers running, we're going to leap into the future with Kubernetes, deployed via Terraform. I won't talk about Kubernetes itself much, but this is a great way to show how Terraform can actually deploy some complex servers and related infrastructure with only a minimal amount of configuration.
+
+One could setup each of these resources we'll review from individual resources within the environment that they're deploying. But in this scenario I'll show you a single container cluster resource that will take care of the entire deployment for us. It's really cool.
+
+- DEPLOY TO AZURE... talk about connecting then...
+- DEPLOY TO GCP... talk about connecting then...
+- Maybe AWS too?
+
 # Terraform Syntax Deep Dive
+
+
+
 # Overview of Commands w/ CLI
 # Variables
 # Environment Variables
@@ -144,7 +163,3 @@ Create new network. Put IP and Instance into the new network.
 # Contributing to Terraform
 # HashiCorp Tooling
 # Next Steps
-
-
-
-
