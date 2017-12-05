@@ -126,13 +126,19 @@ Create new network. Put IP and Instance into the new network.
 
 Build out a network with respective subnetworks and discuss the reasoning and ideas behind subnetworks. Scaling devices into them, etc.
 
+LINK TO TERRAFORM NETWORK SETUP REPO -> 
+
 # Deploy Servers
 
 Let's deploy some standard servers now. Once I get that deployed I'll show you how to go beyond that and start setting up services on the server, and even deploy a little application service code from the Terraform perspective.
 
+LINK TO TERRAFORM SERVER SETUP REPO -> 
+
 # Virtual Machines
 
 Now that we've setup a server, let's take a look at managing multiple servers deployed within the overall environment.
+
+LINK TO TERRAFORM MULTIPLE VIRTUAL MACHINES SETUP REPO -> 
 
 # Clusters w/ Cloud Platforms
 
@@ -144,22 +150,87 @@ One could setup each of these resources we'll review from individual resources w
 - DEPLOY TO GCP... talk about connecting then...
 - Maybe AWS too?
 
+LINK TO AZURE SETUP -> 
+
+LINK TO GCP SETUP -> 
+
 # Terraform Syntax Deep Dive
 
-
+Alright. We've got some pretty solid infrastructure deployed, safely able to be recreated, and all neatly written up in our configuration files.
 
 # Overview of Commands w/ CLI
+
+I've covered the four most common commands of Terraform have gotten us this far, but let's talk about what else Terraform provides for us.
+
+```
+terraform init
+terraform plan
+terraform apply
+terraform destroy
+```
+
+...
+
+```
+terraform console
+terraform workspace (nix `env`, it's deprecated, change to workspace)
+    show
+    list
+    select
+    new
+    delete
+terraform fmt
+terraform get (reference the fact I'll cover more on modules later)
+terraform graph
+terraform import
+terraform output
+terraform providers
+terraform push (Is it still called Atlas, seems to be in the help in the CLI)
+terraform refresh
+terraform show
+terraform taint
+terraform untaint
+terraform validate
+terraform version
+terraform state
+```
+
 # Variables
+
+Ok, now with some basic infrastructure built and the terraform commands covered, let's talk about Terraform variables and how we can declare, assign, and use these to extend Terraform's dynamic capabilities.
+
 # Environment Variables
+
+I've covered many ways to declare, use, and mainpulate variables within Terraform. There's one more way I want to cover before moving on. This is Terraform and the convention it uses around environment variables. I wanted to break this out specifically because of the tendency to use environment variables for secret information, or just for information we might keep outside of a repository. 
+
+The simple idea is that Terraform will look for any environment variables starting with `TF_VAR_` and 
+
 # Secrets
+
+Vault -> what to do for secret management (push variable)
+
 # Terraform Best Practices
+
+LINK -> NEED TO GET LINK TO SOME OF THIS MATERIAL.
+
 # Guidance: Patterns & Practices
+
+LINK -> NEED TO GET LINK AND RELATED MATERIAL.
+
 # Workflow
+
 # Project Practices
+
 # Debugging & Testing
+
 # Customizing & Extending Terraform
+
 # Go & Terraform
+
 # Go Plugins & Terraform Plugins
+
 # Contributing to Terraform
+
 # HashiCorp Tooling
+
 # Next Steps
