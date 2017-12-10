@@ -14,4 +14,19 @@ Much of the container landscape; Docker, Kubernetes, etc, don't specifically pro
 
 The Solutions
 
-Kasten - 
+
+
+Kasten ??
+
+https://blog.openshift.com/kubernetes-state-storage/
+
+https://stackoverflow.com/questions/41732819/why-statefulsets-cant-a-stateless-pod-use-persistent-volumes/41733207
+
+https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/
+
+https://cloud.google.com/kubernetes-engine/docs/how-to/stateful-apps
+
+https://opensource.com/article/17/2/stateful-applications
+
+- > https://thenewstack.io/strategies-running-stateful-applications-kubernetes-volumes/
+- > https://thenewstack.io/kubernetes-brings-new-persistent-storage-options-containers/
