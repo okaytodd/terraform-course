@@ -31,3 +31,4 @@ https://blog.chewxy.com/2017/11/02/go-for-data-science/
 
 Suggestions on setting up Go Projects.
 https://www.reddit.com/r/golang/comments/79wf23/where_can_i_learn_about_code_structure_and/
+
