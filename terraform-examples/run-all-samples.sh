@@ -3,7 +3,7 @@
 testTerraform () {
     terraform init
     terraform plan
-    terraform apply
+    echo "yes" | terraform apply
     echo "yes" | terraform destroy    
 }
 
@@ -18,6 +18,6 @@ testTerraform
 cd ..
 
 echo "Running the  verification."
-cd 02-static-ip
+cd 02-general-resources
 testTerraform
 cd ..
