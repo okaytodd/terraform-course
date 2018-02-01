@@ -1,6 +1,6 @@
 provider "google" {
   credentials = "${file("../../../secrets/account.json")}"
-  project = "that-big-universe"
+  project = "thrashingcorecode"
   region = "us-west1"
 }
 
@@ -9,8 +9,8 @@ provider "aws" {
 }
 
 provider "azurerm" {
-  subscription_id = "a_subscription_id"
-  client_id       = "a_client_id"
-  client_secret   = "a_client_secret"
-  tenant_id       = "a_tenant_id"
+  subscription_id = "${var.subscription_id}"
+  client_id       = "${var.client_id}"
+  client_secret   = "${var.client_secret}"
+  tenant_id       = "${var.tenant_id}"
 }
