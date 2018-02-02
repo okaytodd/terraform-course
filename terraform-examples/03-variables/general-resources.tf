@@ -1,6 +1,6 @@
 // Google Cloud Platform Resources
 resource "google_compute_network" "our_development_network" {
-  name                    = "devnetwork"
+  name                    = "${var.network_name}"
   auto_create_subnetworks = "true"
 }
 
@@ -9,7 +9,7 @@ resource "aws_vpc" "new_vpc" {
   cidr_block = "10.0.0.0/16"
   enable_dns_hostnames = true
   tags {
-    Name = "terraform-aws-vpc"
+    Name = "${var.vpc_name}"
   }
 }
 
@@ -45,21 +45,21 @@ resource "azurerm_virtual_network" "azy" {
   resource_group_name = "${azurerm_resource_group.azy.name}"
   address_space       = ["10.0.0.0/16"]
   location            = "West US"
-  dns_servers         = ["10.0.0.4", "10.0.0.5"]
+  dns_servers         = "${var.dns_servers}"
 
   subnet {
-    name           = "subnet1"
-    address_prefix = "10.0.1.0/24"
+    name           = "${var.subnet_names["subnet1"]}"
+    address_prefix = "${var.subnet_address_prefixes["subnet1"]}"
   }
 
   subnet {
-    name           = "subnet2"
-    address_prefix = "10.0.2.0/24"
+    name           = "${var.subnet_names["subnet2"]}"
+    address_prefix = "${var.subnet_address_prefixes["subnet2"]}"
   }
 
   subnet {
-    name           = "subnet3"
-    address_prefix = "10.0.3.0/24"
+    name           = "${var.subnet_names["subnet3"]}"
+    address_prefix = "${var.subnet_address_prefixes["subnet3"]}"
     security_group = "${azurerm_network_security_group.azy.id}"
   }
 
