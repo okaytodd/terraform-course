@@ -14,8 +14,6 @@ Much of the container landscape; Docker, Kubernetes, etc, don't specifically pro
 
 The Solutions
 
-
-
 Kasten ??
 
 https://blog.openshift.com/kubernetes-state-storage/
