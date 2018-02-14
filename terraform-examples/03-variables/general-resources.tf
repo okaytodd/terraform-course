@@ -5,7 +5,7 @@ resource "google_compute_network" "our_development_network" {
 }
 
 // Amazon Web Services Resources
-resource "aws_vpc" "new_vpc" {
+resource "aws_vpc" "new_vpc_example_three" {
   cidr_block = "10.0.0.0/16"
   enable_dns_hostnames = true
   tags {
@@ -14,7 +14,7 @@ resource "aws_vpc" "new_vpc" {
 }
 
 data "aws_subnet" "selected" {
-  id = "${aws_vpc.new_vpc.id}"
+  id = "${aws_vpc.new_vpc_example_three.id}"
 }
 
 resource "aws_security_group" "subnet" {
@@ -29,20 +29,20 @@ resource "aws_security_group" "subnet" {
 }
 
 // Azure Network Resources
-resource "azurerm_resource_group" "azy" {
+resource "azurerm_resource_group" "azy-example-three-resource-group" {
   name     = "acceptanceTestResourceGroup1"
   location = "West US"
 }
 
-resource "azurerm_network_security_group" "azy" {
+resource "azurerm_network_security_group" "azy-example-three-security-group" {
   name                = "acceptanceTestSecurityGroup1"
-  location            = "${azurerm_resource_group.azy.location}"
-  resource_group_name = "${azurerm_resource_group.azy.name}"
+  location            = "${azurerm_resource_group.azy-example-three-resource-group.location}"
+  resource_group_name = "${azurerm_resource_group.azy-example-three-resource-group.name}"
 }
 
-resource "azurerm_virtual_network" "azy" {
+resource "azurerm_virtual_network" "azy-example-three-virtual-network" {
   name                = "virtualNetwork1"
-  resource_group_name = "${azurerm_resource_group.azy.name}"
+  resource_group_name = "${azurerm_resource_group.azy-example-three-resource-group.name}"
   address_space       = ["10.0.0.0/16"]
   location            = "West US"
   dns_servers         = "${var.dns_servers}"
@@ -60,10 +60,10 @@ resource "azurerm_virtual_network" "azy" {
   subnet {
     name           = "${var.subnet_names["subnet3"]}"
     address_prefix = "${var.subnet_address_prefixes["subnet3"]}"
-    security_group = "${azurerm_network_security_group.azy.id}"
+    security_group = "${azurerm_network_security_group.azy-example-three-security-group.id}"
   }
 
   tags {
-    environment = "Production"
+    environment = "Production-example-three"
   }
 }
